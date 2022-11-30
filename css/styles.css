@@ -1039,13 +1039,6 @@ img {
 .modal-form {
     display: flex;
     flex-direction: column;
-
-}
-
-.modal-input {
-    display: block;
-    width: 448px;
-
 }
 
 .input-text {
@@ -1095,7 +1088,7 @@ img {
 .icon-modal {
     position: relative;
     margin: 0 auto;
-
+    display: flex;
 }
 
 .input-modal-form {
@@ -1110,6 +1103,7 @@ img {
 .input-field-comment {
     width: 100%;
     outline: none;
+    display: flex;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     height: 120px;
@@ -1117,9 +1111,16 @@ img {
     resize: none;
 }
 
+.input-field-comment:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    transition: border-color var(--transition-func);
+}
+
 .modal-input-check {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 20px;
     font-weight: 400;
     font-size: 14px;
@@ -1235,6 +1236,13 @@ img {
     width: 358px;
     height: 50px;
     padding: 15px 16px;
+
+}
+
+.input-emai-field:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    transition: border-color var(--transition-func);
 }
 
 .btn-send-footer {
@@ -1244,6 +1252,8 @@ img {
     height: 50px;
     border: none;
     color: var(--button-text-color);
+    letter-spacing: 0.06em;
+    font-weight: 700;
     cursor: pointer;
     margin-left: 12px;
     display: inline-block;
